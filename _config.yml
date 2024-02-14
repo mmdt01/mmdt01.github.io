@@ -10,7 +10,7 @@ locale                   : "en-UK"
 title                    : "M. M. Du Toit"
 title_separator          : "-"
 name                     : &name "Matthys du Toit"
-description              : &description "personal description"
+description              : &description "Machine Learning Engineer looking for research opportunities in the field of AI and Robotics"
 url                      : https://mmdt01.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "mmdt01/mmdt01.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Matthys du Toit"
   avatar           : "profile.JPG"
-  bio              : "MEng Integrated Mechanical and Electrical Engineering Student at the University of Bath"
+  bio              : "Integrated Mechanical and Electrical Engineer with experience in AI and Robotics"
   location         : "Bath, UK"
   employer         :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,13 +96,13 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "mmdt01"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/matthys-du-toit/"
   orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :

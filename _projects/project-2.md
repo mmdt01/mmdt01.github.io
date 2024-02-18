@@ -1,7 +1,7 @@
 ---
 title: "F1 Performance Analysis and Visualisation"
 date: 2022-08-07
-excerpt: "Data Analysis of drivers performance from telemetry using Python"
+# excerpt: "Data Analysis of drivers performance from telemetry using Python"
 collection: projects
 ---
 

@@ -1,10 +1,7 @@
 ---
-title: "RoboLecturer"
-date: 2023-03-30
-excerpt: "Designed a human-like robotic system capable of giving interactive lectures by utilising LLMs for slide and script generation, DNNs for speech synthesis (TTS) and recognition (STT) and Computer Vision"
-collection: projects
+title: "Portfolio item number 1"
+# excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+collection: portfolio
 ---
 
-Designed and implemented a human-like robotic system (based on Softbank Robotics’ Pepper robot) capable of giving interactive lectures by utilising LLMs for slide and script generation, DNNs for speech synthesis (TTS) and recognition (STT) as well as Computer Vision for face and body posture recognition (ROS, Python)
-
-<a href='https://github.com/antonypap'>Check project on GitHub</a>
+This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 

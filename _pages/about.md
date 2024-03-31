@@ -22,12 +22,12 @@ Beyond the lab, I'm a South African native who draws energy from the outdoors. A
 Research interests
 ------
 
-My research interests lie at the intersection of human physiology and engineering, particularly in the context of recent advancements in Artificial Intelligence. These advancements have opened exciting avenues for developing transformative technologies in rehabilitation engineering, human-robot interaction (HRI), and biomedical robotics. These fields hold significant potential to not only restore lost functionalities but also augment human capabilities. Within this domain, I am particularly drawn to neuroengineering, a field with vast unexplored territory. The potential for groundbreaking advancements through brain-computer interfaces is a powerful motivator in my research pursuits.
+My interests lie at the intersection of human physiology and engineering, particularly in the context of recent advancements in Artificial Intelligence. These advancements have opened exciting avenues for developing transformative technologies in rehabilitation engineering, human-robot interaction (HRI), and biomedical robotics. These fields hold significant potential to not only restore lost functionalities but also augment human capabilities. Within this domain, I am particularly drawn to neuroengineering, a field with vast unexplored territory. The potential for groundbreaking advancements through brain-computer interfaces is a powerful motivator in my research pursuits.
 
 
 
 
 Get in touch!
 ------
-I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at, mmdt20@bath.ac.uk.
+I'm currently looking for PhD and other research opportunities in the fields mentioned! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at, mmdt20@bath.ac.uk.
 

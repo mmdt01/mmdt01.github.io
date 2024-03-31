@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Fueled by a fascination with intelligence, both natural and artificial, I'm an AI and Robotics enthusiast with a background in Integrated Mechanical and Electrical Engineering. My 9 months of industry experience as a Machine Learning engineer ignited a passion to leverage these fields for real-world good. Currently, I'm delving into the fascinating world of brain-computer interfaces at the [University of Bath's Centre for Bioengineering and Biomedical technologies] (https://www.bath.ac.uk/research-centres/centre-for-bioengineering-biomedical-technologies/), exploring how novel AI methods can be used to decode neural signals of imagined interactions with robotic manipulators.
+Driven by a curiosity about intelligence, both natural and artificial, I am a Robotics and AI enthusiast with a background in Integrated Mechanical and Electrical Engineering. My 9 months of industry experience as a Machine Learning engineer ignited a passion to leverage these fields for real-world good. Currently, I'm delving into the fascinating world of brain-computer interfaces at the [University of Bath's Centre for Bioengineering and Biomedical technologies](https://www.bath.ac.uk/research-centres/centre-for-bioengineering-biomedical-technologies/), exploring how novel Deep Learning methods can be used to decode neural signals of imagined interactions with robotic manipulators.
 
-Beyond the lab, I'm a South African native who thrives in nature. A passionate surfer, climber, and wildlife enthusiast, I believe in a balanced life that fuels both my scientific curiosity and my connection to the world around me. My ultimate goal? To combine my problem-solving skills with my fascination for intelligent systems to create general-purpose learning algorithms that have a truly positive impact on people's lives.
+Beyond the lab, I'm a South African native who draws energy from the outdoors. A passionate surfer, climber, and wildlife enthusiast, I believe in a balanced life that fuels both my scientific curiosity and my connection to the world around me. My ultimate goal? To combine my problem-solving skills with my fascination for intelligent systems to create general-purpose learning algorithms that have a truly positive impact on people's lives.
 
 
 

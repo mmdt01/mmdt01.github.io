@@ -84,7 +84,7 @@ author:
   avatar           : "profile.JPG"
   bio              : "Integrated Mechanical and Electrical Engineering (MEng) Final Year | Aspiring Robotics and AI Researcher"
   location         : "Bath, UK"
-  employer         :
+  employer         :  "University of Bath"
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : "mmdt20@bath.ac.uk"
@@ -114,7 +114,6 @@ author:
   vine             :
   weibo            :
   xing             :
-  university       : "University of Bath"
   youtube          :
   wikipedia        :
 

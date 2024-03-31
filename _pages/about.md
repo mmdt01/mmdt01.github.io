@@ -8,7 +8,16 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+Fueled by a fascination with intelligence, both natural and artificial, I'm an AI and Robotics enthusiast with a background in Integrated Mechanical and Electrical Engineering. My 9 months of industry experience as a Machine Learning engineer ignited a passion to leverage these fields for real-world good. Currently, I'm delving into the fascinating world of brain-computer interfaces at the [University of Bath's Centre for Bioengineering and Biomedical technologies] (https://www.bath.ac.uk/research-centres/centre-for-bioengineering-biomedical-technologies/), exploring how novel AI methods can be used to decode neural signals of imagined interactions with robotic manipulators.
+
+Beyond the lab, I'm a South African native who thrives in nature. A passionate surfer, climber, and wildlife enthusiast, I believe in a balanced life that fuels both my scientific curiosity and my connection to the world around me. My ultimate goal? To combine my problem-solving skills with my fascination for intelligent systems to create general-purpose learning algorithms that have a truly positive impact on people's lives.
+
+
+
+<!-- Hi there, I am writing a summary paragraph about myself for my personal webpage. I would like the summary to express my enthusiasm for robotics and AI, and how the two fields can be used to make a tremendous positive impact on improving the qualities of people's lives. -->
+
+
+
 
 Research interests
 ------

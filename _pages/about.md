@@ -31,3 +31,4 @@ Get in touch!
 ------
 I'm currently looking for PhD and other research opportunities in the fields mentioned! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at, mmdt20@bath.ac.uk.
 
+<br/><img src='/images/500x300.png'>

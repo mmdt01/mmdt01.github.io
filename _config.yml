@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Matthys du Toit"
   avatar           : "profile.JPG"
-  bio              : "Integrated Mechanical and Electrical Engineer with experience in AI and Robotics"
+  bio              : "MEng Integrated Mechanical and Electrical Engineer | Aspiring Machine Learning and Robotics Researcher"
   location         : "Bath, UK"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -96,14 +96,14 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/mmdt01"
+  github           : "mmdt01" 
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/matthys-du-toit"
-  medium           : "https://medium.com/@matthysdutoit"
+  linkedin         : "matthys-du-toit"
+  medium           : "@matthysdutoit"
   # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
@@ -114,6 +114,7 @@ author:
   vine             :
   weibo            :
   xing             :
+  university       : "University of Bath"
   youtube          :
   wikipedia        :
 

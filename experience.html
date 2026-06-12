@@ -1,0 +1,23 @@
+---
+layout: default
+nav: experience
+title: Experience
+description: Education, research, and internship history.
+---
+<h2 class="sr-only">Experience</h2>
+<p class="eyebrow">education · research · work</p>
+<h1>Experience</h1>
+
+<div class="timeline">
+  {% for item in site.data.experience %}
+    <div class="tl-item">
+      <div class="tl-period">{{ item.period }}</div>
+      <div>
+        <div class="tl-role">{{ item.role }}</div>
+        <div class="tl-org">{{ item.org }}</div>
+        {% if item.note %}<div class="tl-note">{{ item.note }}</div>{% endif %}
+        {% if item.kind %}<span class="tl-kind">{{ item.kind }}</span>{% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

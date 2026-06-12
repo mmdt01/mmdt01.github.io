@@ -1,0 +1,29 @@
+# The Experience timeline. Newest first. Each entry:
+#   period — short date range (mono, left column)
+#   role   — your title / position
+#   org    — institution or company
+#   note   — one or two short sentences
+#   kind   — education | research | internship | work  (shown as a tag)
+- period: "2025 — 2026"
+  role:   "MSc, Artificial Intelligence"
+  org:    "University of Somewhere"
+  note:   "Thesis: connectome-constrained world models. Coursework in deep learning, computational neuroscience, and reinforcement learning."
+  kind:   education
+
+- period: "Summer 2025"
+  role:   "Machine Learning Intern"
+  org:    "Some Lab / Company"
+  note:   "Built data pipelines and trained sequence models for a research prototype. Shipped an internal eval harness."
+  kind:   internship
+
+- period: "2024 — 2025"
+  role:   "Research Assistant"
+  org:    "Neuro-AI Group"
+  note:   "Investigated biologically structured network priors. Co-authored an internal report on sample efficiency."
+  kind:   research
+
+- period: "2020 — 2024"
+  role:   "BSc, Computer Science"
+  org:    "University of Elsewhere"
+  note:   "First-class honours. Final project on predictive models of neural activity."
+  kind:   education

@@ -1,0 +1,41 @@
+# ─── Site identity ───────────────────────────────────────────────
+# Edit these. They feed the sidebar, page titles, and meta tags.
+name:        Sam Ellison
+tagline:     applied ai · neuroscience
+role:        MSc candidate — applied AI research
+# One-line hero statement shown large on the homepage.
+statement:   I build agents that borrow their wiring from biological brains.
+# Short "open to work" note in the sidebar. Leave blank ("") to hide it.
+status:      open to 2026 roles
+email:       you@example.com
+
+# Full URL where the site will live. For a user site this is
+# https://USERNAME.github.io  — for a project site, add the repo path.
+url:         "https://username.github.io"
+baseurl:     ""
+
+# ─── Build settings ──────────────────────────────────────────────
+# No theme gem — we ship our own layouts in _layouts/ and _includes/.
+markdown:    kramdown
+permalink:   /:categories/:title/
+timezone:    Europe/London
+
+# Posts are split into two streams by their `category` front-matter:
+# "research" and "essays". The listing pages filter on that.
+defaults:
+  - scope:   { path: "", type: "posts" }
+    values:  { layout: "post" }
+
+# Generated/irrelevant files kept out of the build output.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .gitignore
+
+# Plugins available on GitHub Pages by default.
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

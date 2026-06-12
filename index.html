@@ -1,0 +1,31 @@
+---
+layout: default
+nav: about
+description: Final-year MSc student working on connectome-constrained world models, heading into applied AI research engineering.
+---
+<h2 class="sr-only">About {{ site.name }}</h2>
+
+<p class="eyebrow">{{ site.role }}</p>
+<p class="hero">{{ site.statement }}<span class="caret" aria-hidden="true">&#9612;</span></p>
+
+<p class="lede">
+  Final-year MSc student finishing a thesis on connectome-constrained world
+  models — using the wiring diagrams of real nervous systems as priors for
+  agents that learn to predict and act. I care about the places where
+  neuroscience and machine learning genuinely inform each other. This site
+  collects my projects, writing, and CV.
+</p>
+
+<div style="margin-top:38px;">
+  <div class="section-label">
+    <span>selected research</span>
+    <a href="{{ '/research/' | relative_url }}">all &#8594;</a>
+  </div>
+  {% include postlist.html category="research" limit=3 %}
+
+  <div class="section-label">
+    <span>recent essays</span>
+    <a href="{{ '/essays/' | relative_url }}">all &#8594;</a>
+  </div>
+  {% include postlist.html category="essays" limit=2 %}
+</div>

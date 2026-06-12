@@ -1,0 +1,347 @@
+/* ============================================================
+   Sam Ellison — personal site
+   Design: minimal neo-grotesque (Geist) + mono gutter nav.
+   Theming via [data-theme] on <html>. Change the two token
+   blocks below to retheme the whole site.
+   ============================================================ */
+
+/* ---- Light theme (default) ---- */
+:root {
+  --bg:      #f6f6f4;
+  --ink:     #1b1b18;
+  --muted:   #76766e;
+  --faint:   #a6a69d;
+  --line:    rgba(0,0,0,.10);
+  --surface: #ffffff;
+  --accent:  #4250c5;
+  --gutter:  #c4c4bc;
+
+  --font-body: "Geist", system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --sidebar-w: 224px;
+  --content-max: 660px;
+}
+
+/* ---- Dark theme ---- */
+[data-theme="dark"] {
+  --bg:      #121211;
+  --ink:     #ededea;
+  --muted:   #8f8f87;
+  --faint:   #5c5c56;
+  --line:    rgba(255,255,255,.12);
+  --surface: #191917;
+  --accent:  #9aa3f0;
+  --gutter:  #3c3c37;
+}
+
+/* ---- Reset ---- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ============================================================
+   Layout shell
+   ============================================================ */
+.shell { display: flex; min-height: 100vh; }
+
+.sidebar {
+  width: var(--sidebar-w);
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 100vh;
+  border-right: 1px solid var(--line);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  padding: 56px 40px 80px;
+}
+.content-inner { max-width: var(--content-max); }
+
+/* ============================================================
+   Sidebar pieces
+   ============================================================ */
+.brand-name {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -.02em;
+}
+.brand-tagline {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .05em;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.brand-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+}
+.brand-status .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.nav { display: flex; flex-direction: column; }
+.nav a {
+  display: flex;
+  align-items: baseline;
+  gap: 11px;
+  padding: 5px 0;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  color: var(--muted);
+  transition: color .15s ease;
+}
+.nav a .num { color: var(--gutter); font-size: 12px; min-width: 18px; }
+.nav a .arrow { margin-left: auto; color: var(--accent); opacity: 0; transition: opacity .15s ease; }
+.nav a:hover { color: var(--ink); }
+.nav a:hover .arrow { opacity: 1; }
+.nav a.is-active { color: var(--ink); }
+.nav a.is-active .arrow { opacity: 1; }
+.nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+.sidebar-foot { margin-top: auto; display: flex; flex-direction: column; gap: 16px; }
+.socials { display: flex; flex-wrap: wrap; gap: 15px; font-size: 17px; color: var(--muted); }
+.socials a { line-height: 1; }
+.socials a:hover { color: var(--ink); }
+.socials a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 6px 11px;
+  cursor: pointer;
+  transition: color .15s ease, border-color .15s ease;
+}
+.theme-toggle:hover { color: var(--ink); border-color: var(--accent); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ============================================================
+   Content typography
+   ============================================================ */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.hero {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.28;
+  letter-spacing: -.01em;
+  margin: 0 0 18px;
+}
+.lede { font-size: 15.5px; color: var(--muted); margin: 0 0 0; }
+
+.content h1 { font-size: 24px; font-weight: 500; letter-spacing: -.01em; margin: 0 0 6px; }
+.content h2 { font-size: 17px; font-weight: 500; margin: 2.2rem 0 .6rem; }
+.content h3 { font-size: 15px; font-weight: 500; margin: 1.6rem 0 .4rem; }
+.content p  { margin: 0 0 1.1rem; }
+.content a:not(.nav a):not(.row):not(.btn) { color: var(--accent); }
+.content a:not(.nav a):not(.row):not(.btn):hover { text-decoration: underline; text-underline-offset: 2px; }
+.content ul, .content ol { padding-left: 1.2rem; }
+.content li { margin: .3rem 0; }
+.content code {
+  font-family: var(--font-mono);
+  font-size: .88em;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+.content pre {
+  font-family: var(--font-mono);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.content pre code { background: none; border: 0; padding: 0; }
+.content blockquote {
+  margin: 1.2rem 0;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+  color: var(--muted);
+}
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.2rem 0; }
+
+/* Blinking terminal caret after the hero (homepage). */
+.caret { color: var(--accent); font-weight: 400; animation: blink 1.1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+/* ============================================================
+   Section label + list rows (research / essays / home)
+   ============================================================ */
+.section-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+.section-label a { color: var(--faint); }
+.section-label a:hover { color: var(--accent); }
+
+.list { margin: 0 0 2rem; }
+.row {
+  display: grid;
+  grid-template-columns: 52px 1fr auto;
+  align-items: baseline;
+  gap: 14px;
+  padding: 11px 0;
+  border-top: 1px solid var(--line);
+}
+.row:last-child { border-bottom: 1px solid var(--line); }
+.row .row-date { font-family: var(--font-mono); font-size: 12px; color: var(--faint); }
+.row .row-title { font-size: 15px; line-height: 1.4; transition: color .15s ease; }
+.row .row-arrow { color: var(--accent); opacity: 0; font-family: var(--font-mono); font-size: 12px; transition: opacity .15s ease; }
+.row:hover .row-title { color: var(--accent); }
+.row:hover .row-arrow { opacity: 1; }
+.row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+.row .row-sub { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; }
+
+/* ============================================================
+   Experience timeline
+   ============================================================ */
+.timeline { margin-top: 1.5rem; }
+.tl-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+.tl-item:last-child { border-bottom: 1px solid var(--line); }
+.tl-period { font-family: var(--font-mono); font-size: 12px; color: var(--faint); padding-top: 2px; }
+.tl-role { font-size: 15px; font-weight: 500; }
+.tl-org { font-size: 14px; color: var(--muted); margin-top: 1px; }
+.tl-note { font-size: 14px; color: var(--muted); margin-top: 8px; line-height: 1.6; }
+.tl-kind {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 2px 7px;
+  margin-top: 10px;
+}
+
+/* ============================================================
+   Post (research / essay article)
+   ============================================================ */
+.post-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .04em;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+.post-title { font-size: 24px; font-weight: 500; letter-spacing: -.01em; line-height: 1.25; margin: 0 0 1.8rem; }
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+.back-link:hover { color: var(--accent); }
+
+/* ============================================================
+   CV
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 9px 14px;
+  transition: border-color .15s ease, color .15s ease;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ============================================================
+   Mobile: sidebar collapses to a top bar
+   ============================================================ */
+@media (max-width: 720px) {
+  .shell { flex-direction: column; }
+  .sidebar {
+    width: auto;
+    position: static;
+    height: auto;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 20px 22px;
+    gap: 18px;
+  }
+  .nav { flex-flow: row wrap; gap: 4px 16px; }
+  .nav a .arrow { display: none; }
+  .sidebar-foot { margin-top: 4px; flex-direction: row; align-items: center; justify-content: space-between; }
+  .content { padding: 36px 22px 64px; }
+  .hero { font-size: 21px; }
+}
+
+/* Respect reduced-motion. */
+@media (prefers-reduced-motion: reduce) {
+  .caret { animation: none; }
+  * { transition: none !important; }
+}
+
+/* Screen-reader-only utility. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}

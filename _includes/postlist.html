@@ -1,0 +1,20 @@
+{% comment %}
+  Renders a list of posts as date/title rows.
+  Params:
+    include.category — "research" or "essays"
+    include.limit    — optional max number of rows
+{% endcomment %}
+{% assign items = site.posts | where_exp: "p", "p.categories contains include.category" %}
+{% if include.limit %}{% assign items = items | slice: 0, include.limit %}{% endif %}
+
+<div class="list">
+  {% for post in items %}
+    <a class="row" href="{{ post.url | relative_url }}">
+      <span class="row-date">{{ post.date | date: "%Y" }}</span>
+      <span class="row-title">{{ post.title }}
+        {% if post.summary %}<span class="row-sub">{{ post.summary }}</span>{% endif %}
+      </span>
+      <span class="row-arrow" aria-hidden="true">&#8599;</span>
+    </a>
+  {% endfor %}
+</div>

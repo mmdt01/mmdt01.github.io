@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% if page.title %}
+  <title>{{ page.title }} · {{ site.name }}</title>
+{% else %}
+  <title>{{ site.name }} — {{ site.tagline }}</title>
+{% endif %}
+
+{% comment %} jekyll-seo-tag fills in description, OpenGraph, etc. {% endcomment %}
+{% seo %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+{% comment %} Tabler icons (outline) for social + UI glyphs. {% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.11.0/dist/tabler-icons.min.css">
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+{% include theme-init.html %}

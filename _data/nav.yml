@@ -1,0 +1,18 @@
+# The left-hand "gutter" nav. Order here = order on the page.
+# `id` is matched against each page's `nav` front-matter to set the
+# active (highlighted) item.
+- id: about
+  label: about
+  url: /
+- id: experience
+  label: experience
+  url: /experience/
+- id: research
+  label: research
+  url: /research/
+- id: essays
+  label: essays
+  url: /essays/
+- id: cv
+  label: cv
+  url: /cv/

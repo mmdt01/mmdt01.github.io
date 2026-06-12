@@ -1,0 +1,17 @@
+# Sidebar links. `icon` is a Tabler icon name (https://tabler.io/icons).
+# Delete a block to hide that link; reorder freely.
+- label: GitHub
+  icon: brand-github
+  url: https://github.com/username
+- label: LinkedIn
+  icon: brand-linkedin
+  url: https://linkedin.com/in/username
+- label: X
+  icon: brand-x
+  url: https://x.com/username
+- label: Google Scholar
+  icon: school
+  url: https://scholar.google.com/citations?user=XXXX
+- label: Email
+  icon: mail
+  url: mailto:you@example.com

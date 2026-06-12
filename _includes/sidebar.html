@@ -1,0 +1,35 @@
+<aside class="sidebar">
+  <div>
+    <a href="{{ '/' | relative_url }}" class="brand-name">{{ site.name | downcase }}</a>
+    <div class="brand-tagline">{{ site.tagline }}</div>
+    {% if site.status and site.status != "" %}
+      <div class="brand-status"><span class="dot"></span>{{ site.status }}</div>
+    {% endif %}
+  </div>
+
+  <nav class="nav" aria-label="Primary">
+    {% for item in site.data.nav %}
+      <a href="{{ item.url | relative_url }}"
+         class="{% if page.nav == item.id %}is-active{% endif %}"
+         {% if page.nav == item.id %}aria-current="page"{% endif %}>
+        <span class="num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</span>
+        <span class="nav-label">{{ item.label }}</span>
+        <span class="arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    {% endfor %}
+  </nav>
+
+  <div class="sidebar-foot">
+    <div class="socials">
+      {% for s in site.data.socials %}
+        <a href="{{ s.url }}" aria-label="{{ s.label }}"
+           {% unless s.url contains 'mailto' %}target="_blank" rel="noopener"{% endunless %}>
+          <i class="ti ti-{{ s.icon }}"></i>
+        </a>
+      {% endfor %}
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
+      <i class="ti ti-moon"></i><span class="tt-label">dark</span>
+    </button>
+  </div>
+</aside>

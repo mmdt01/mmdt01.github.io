@@ -2,16 +2,16 @@
 # Delete a block to hide that link; reorder freely.
 - label: GitHub
   icon: brand-github
-  url: https://github.com/username
+  url: https://github.com/mmdt01
 - label: LinkedIn
   icon: brand-linkedin
-  url: https://linkedin.com/in/username
+  url: https://linkedin.com/in/matthys-du-toit
 - label: X
   icon: brand-x
-  url: https://x.com/username
+  url: https://x.com/Matthys_DuToit1
 - label: Google Scholar
   icon: school
   url: https://scholar.google.com/citations?user=XXXX
 - label: Email
   icon: mail
-  url: mailto:you@example.com
+  url: mailto:matthysdutoit100@gmail.com

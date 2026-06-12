@@ -1,6 +1,6 @@
 # ─── Site identity ───────────────────────────────────────────────
 # Edit these. They feed the sidebar, page titles, and meta tags.
-name:        Sam Ellison
+name:        Matthys du Toit
 tagline:     applied ai · neuroscience
 role:        MSc candidate — applied AI research
 # One-line hero statement shown large on the homepage.
@@ -11,7 +11,7 @@ email:       you@example.com
 
 # Full URL where the site will live. For a user site this is
 # https://USERNAME.github.io  — for a project site, add the repo path.
-url:         "https://username.github.io"
+url:         "https://mmdt01.github.io"
 baseurl:     ""
 
 # ─── Build settings ──────────────────────────────────────────────

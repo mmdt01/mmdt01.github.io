@@ -4,14 +4,14 @@ name:        Matthys du Toit
 tagline:     applied ai · neuroscience
 role:        MSc candidate — applied AI research
 # One-line hero statement shown large on the homepage.
-statement:   I build agents that borrow their wiring from biological brains.
+statement:   Hello! :)
 # Short "open to work" note in the sidebar. Leave blank ("") to hide it.
 status:      open to 2026 roles
-email:       you@example.com
+email:       matthysdutoit100@gmail.com
 
 # Full URL where the site will live. For a user site this is
 # https://USERNAME.github.io  — for a project site, add the repo path.
-url:         "https://mmdt01.github.io"
+url:         "https://matthys-dutoit.com"
 baseurl:     ""
 
 # ─── Build settings ──────────────────────────────────────────────
